@@ -27688,3 +27688,877 @@ Processing by PlagueReportsController#find_reports as HTML
 Completed 200 OK in 67ms (Views: 61.6ms | ActiveRecord: 1.1ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-05-21 05:46:47 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FarmsController#index as HTML
+Completed 401 Unauthorized in 19ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-05-21 05:46:47 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (83.5ms)
+  Rendered partials/_navbar.html.erb (1.4ms)
+Completed 200 OK in 2209ms (Views: 2180.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-05-21 05:47:46 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.9ms)
+  Rendered partials/_navbar.html.erb (1.1ms)
+Completed 200 OK in 54ms (Views: 53.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-05-21 05:47:58 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.5ms)
+  Rendered partials/_navbar.html.erb (1.0ms)
+Completed 200 OK in 62ms (Views: 60.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-05-21 05:48:05 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.8ms)
+  Rendered partials/_navbar.html.erb (0.8ms)
+Completed 200 OK in 63ms (Views: 62.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-05-21 05:48:13 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.7ms)
+  Rendered partials/_navbar.html.erb (1.8ms)
+Completed 200 OK in 75ms (Views: 73.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-05-21 05:48:23 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.7ms)
+  Rendered partials/_navbar.html.erb (1.0ms)
+Completed 200 OK in 72ms (Views: 70.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-05-21 05:49:39 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.3ms)
+  Rendered partials/_navbar.html.erb (1.0ms)
+Completed 200 OK in 65ms (Views: 64.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-05-21 05:49:51 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.2ms)
+  Rendered partials/_navbar.html.erb (1.2ms)
+Completed 200 OK in 57ms (Views: 56.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-05-21 05:51:39 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (701.0ms)
+Completed 500 Internal Server Error in 705ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `form' for #<#<Class:0x00000004af2c20>:0x007efd39738920>
+Did you mean?  fork):
+    20:     <% end -%>
+    21: 
+    22:     <div class="actions">
+    23:       <%= form.submit "Log in",style:'color:#FFFFFF;',class:'btn btn-success left' %>
+    24:     </div>
+    25:   <% end %>
+    26: 
+  
+app/views/devise/sessions/new.html.erb:23:in `block in _app_views_devise_sessions_new_html_erb__2610464106405940217_69813027846360'
+app/views/devise/sessions/new.html.erb:4:in `_app_views_devise_sessions_new_html_erb__2610464106405940217_69813027846360'
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-05-21 05:51:59 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.6ms)
+  Rendered partials/_navbar.html.erb (0.9ms)
+Completed 200 OK in 62ms (Views: 61.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-05-21 05:52:36 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.8ms)
+  Rendered partials/_navbar.html.erb (1.3ms)
+Completed 200 OK in 74ms (Views: 72.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-05-21 05:53:42 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.5ms)
+  Rendered partials/_navbar.html.erb (1.4ms)
+Completed 200 OK in 62ms (Views: 60.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-05-21 05:56:27 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.6ms)
+  Rendered partials/_navbar.html.erb (1.2ms)
+Completed 200 OK in 60ms (Views: 59.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-05-21 05:56:42 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.2ms)
+  Rendered partials/_navbar.html.erb (1.2ms)
+Completed 200 OK in 67ms (Views: 65.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-05-21 05:57:31 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.8ms)
+  Rendered partials/_navbar.html.erb (1.5ms)
+Completed 200 OK in 58ms (Views: 56.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-05-21 05:58:00 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (4.5ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `merge' for "Mantener la sesión iniciada":String):
+    14: 
+    15:     <% if devise_mapping.rememberable? -%>
+    16:       <div class="field">
+    17:         <%= f.check_box :remember_me, "Mantener la sesión iniciada" %>
+    18:         <%= f.label :remember_me %>
+    19:       </div>
+    20:     <% end -%>
+  
+app/views/devise/sessions/new.html.erb:17:in `block in _app_views_devise_sessions_new_html_erb__2610464106405940217_69813020670720'
+app/views/devise/sessions/new.html.erb:4:in `_app_views_devise_sessions_new_html_erb__2610464106405940217_69813020670720'
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-05-21 05:58:14 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.2ms)
+  Rendered partials/_navbar.html.erb (1.3ms)
+Completed 200 OK in 56ms (Views: 54.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-05-21 05:58:46 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.0ms)
+  Rendered partials/_navbar.html.erb (1.1ms)
+Completed 200 OK in 58ms (Views: 57.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-05-21 05:58:59 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.7ms)
+  Rendered partials/_navbar.html.erb (1.2ms)
+Completed 200 OK in 67ms (Views: 65.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-05-21 05:59:33 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.9ms)
+  Rendered partials/_navbar.html.erb (0.9ms)
+Completed 200 OK in 2173ms (Views: 2171.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-21 06:00:00 -0500
+Processing by FarmsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-05-21 06:00:00 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.5ms)
+  Rendered partials/_navbar.html.erb (0.8ms)
+Completed 200 OK in 70ms (Views: 68.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-05-21 06:01:22 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.0ms)
+  Rendered partials/_navbar.html.erb (1.2ms)
+Completed 200 OK in 1345ms (Views: 1343.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-05-21 06:01:34 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.5ms)
+  Rendered partials/_navbar.html.erb (1.4ms)
+Completed 200 OK in 110ms (Views: 108.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-05-21 06:01:34 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.9ms)
+  Rendered partials/_navbar.html.erb (1.2ms)
+Completed 200 OK in 71ms (Views: 68.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-05-21 06:03:50 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.8ms)
+  Rendered partials/_navbar.html.erb (1.0ms)
+Completed 200 OK in 1436ms (Views: 1434.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-05-21 06:04:36 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.7ms)
+  Rendered partials/_navbar.html.erb (0.9ms)
+Completed 200 OK in 1425ms (Views: 1423.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-05-21 06:05:01 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.0ms)
+  Rendered partials/_navbar.html.erb (1.2ms)
+Completed 200 OK in 104ms (Views: 102.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-05-21 06:05:02 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.3ms)
+  Rendered partials/_navbar.html.erb (0.9ms)
+Completed 200 OK in 67ms (Views: 65.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-05-21 06:05:02 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.2ms)
+  Rendered partials/_navbar.html.erb (0.8ms)
+Completed 200 OK in 57ms (Views: 55.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-05-21 06:05:02 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.6ms)
+  Rendered partials/_navbar.html.erb (1.4ms)
+Completed 200 OK in 65ms (Views: 63.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-05-21 06:05:05 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9/fnnCSAAzw8rC1xvf91eEXV4OlSzB/yO6QBR2cUYoD1PlLnKYOjD+9mRnfkOQDf+mTNEiA2QYjkynOP6f4Xuw==", "user"=>{"email"=>"1@11.co", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Iniciar sesión"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "1@11.co"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-05-21 11:05:05.579305"], ["last_sign_in_at", "2018-05-19 21:51:14.340828"], ["sign_in_count", 3], ["updated_at", "2018-05-21 11:05:05.580464"], ["id", 1]]
+  [1m[35m (85.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 388ms (ActiveRecord: 86.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-21 06:05:05 -0500
+Processing by FarmsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering farms/index.html.erb within layouts/application
+  [1m[36mFarm Load (0.3ms)[0m  [1m[34mSELECT "farms".* FROM "farms" WHERE "farms"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered farms/index.html.erb within layouts/application (77.5ms)
+  Rendered partials/_navbar.html.erb (0.9ms)
+Completed 200 OK in 235ms (Views: 131.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-21 06:06:36 -0500
+Processing by FarmsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering farms/index.html.erb within layouts/application
+  [1m[36mFarm Load (0.1ms)[0m  [1m[34mSELECT "farms".* FROM "farms" WHERE "farms"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered farms/index.html.erb within layouts/application (2.5ms)
+  Rendered partials/_navbar.html.erb (0.8ms)
+Completed 200 OK in 1407ms (Views: 1405.1ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-05-21 06:06:43 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"jpgu94R0hRSQBia9LQa9+JqK15Q7PzI6XXnENlOP2MVPOFLIu4GCD84f6FhHPQkQdjuyoma5fREkcrpQm2Wzcg=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 63ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-21 06:06:43 -0500
+Processing by FarmsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-05-21 06:06:44 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.2ms)
+  Rendered partials/_navbar.html.erb (1.4ms)
+Completed 200 OK in 55ms (Views: 54.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-05-21 06:07:41 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.4ms)
+  Rendered partials/_navbar.html.erb (1.3ms)
+Completed 200 OK in 81ms (Views: 80.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-05-21 06:07:51 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (4.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (11.6ms)
+  Rendered partials/_navbar.html.erb (7.4ms)
+Completed 200 OK in 114ms (Views: 111.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-05-21 06:08:41 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.0ms)
+  Rendered partials/_navbar.html.erb (1.5ms)
+Completed 200 OK in 72ms (Views: 70.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-05-21 06:08:55 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.3ms)
+  Rendered partials/_navbar.html.erb (1.0ms)
+Completed 200 OK in 67ms (Views: 65.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-05-21 06:09:02 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jLdbl9NXJsAxw8PkgWqaD9OH6vwhhyxXo0FyJtaTdGYi7XGqC7tQv7Zweai/qP7m4nHbdAW8b3/r5+U61tWUXQ==", "user"=>{"email"=>"1@11.co", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Iniciar sesión"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "1@11.co"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-05-21 11:09:02.543264"], ["last_sign_in_at", "2018-05-21 11:05:05.579305"], ["sign_in_count", 4], ["updated_at", "2018-05-21 11:09:02.544071"], ["id", 1]]
+  [1m[35m (56.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 233ms (ActiveRecord: 56.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-21 06:09:02 -0500
+Processing by FarmsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering farms/index.html.erb within layouts/application
+  [1m[36mFarm Load (0.2ms)[0m  [1m[34mSELECT "farms".* FROM "farms" WHERE "farms"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered farms/index.html.erb within layouts/application (2.7ms)
+  Rendered partials/_navbar.html.erb (1.5ms)
+Completed 200 OK in 65ms (Views: 61.6ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-05-21 06:09:11 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Q6+AGWltvQUfT0juVkc+v7FD51//AcAa5g4q1rKnAB7mNbO9sKWn9br3TSbNrCSnUKypWIX+Ri51xF4oZsQP9w=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-21 06:09:11 -0500
+Processing by FarmsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-05-21 06:09:11 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.5ms)
+  Rendered partials/_navbar.html.erb (0.9ms)
+Completed 200 OK in 70ms (Views: 68.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-05-21 06:09:13 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.0ms)
+  Rendered partials/_navbar.html.erb (0.8ms)
+Completed 200 OK in 67ms (Views: 66.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-05-21 06:10:43 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (3.6ms)
+  Rendered partials/_navbar.html.erb (0.8ms)
+Completed 200 OK in 53ms (Views: 51.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-05-21 06:11:52 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (3.4ms)
+  Rendered partials/_navbar.html.erb (0.8ms)
+Completed 200 OK in 60ms (Views: 59.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-05-21 06:12:17 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.5ms)
+  Rendered partials/_navbar.html.erb (1.7ms)
+Completed 200 OK in 65ms (Views: 63.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-05-21 06:12:27 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (3.7ms)
+  Rendered partials/_navbar.html.erb (0.9ms)
+Completed 200 OK in 53ms (Views: 51.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-05-21 06:13:10 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (3.8ms)
+  Rendered partials/_navbar.html.erb (2.1ms)
+Completed 200 OK in 69ms (Views: 68.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-05-21 06:13:39 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.2ms)
+  Rendered partials/_navbar.html.erb (0.8ms)
+Completed 200 OK in 54ms (Views: 53.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-05-21 06:13:46 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.1ms)
+  Rendered partials/_navbar.html.erb (1.4ms)
+Completed 200 OK in 82ms (Views: 81.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-05-21 06:14:09 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (4.0ms)
+  Rendered partials/_navbar.html.erb (0.8ms)
+Completed 200 OK in 56ms (Views: 54.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-05-21 06:14:32 -0500
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qoQLS1PNxni2gruaeF0EvqJ+/O/iZcVUq2EDkDywit++DCRfmqrIPiQPiOKoZq9SC9VTQBJnoqfl2Q0TlYE+Eg==", "user"=>{"email"=>"test@tucultivo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Registrarse"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test@tucultivo.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (4.9ms)
+  Rendered partials/_navbar.html.erb (1.0ms)
+Completed 200 OK in 263ms (Views: 64.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-05-21 06:14:43 -0500
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8Iw/PhF1lI+ifMAwSKGvHqtBPpMaCnwWM2drmijymCLkBBAq2BKayTDx80iYmgTyAuqRPOoIG+V932UZgcMs7w==", "user"=>{"email"=>"test@tucultivo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Registrarse"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test@tucultivo.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "test@tucultivo.com"], ["encrypted_password", "$2a$11$hIZBgAjJbQ7t8TaCXJmB6eOC6TxutZgyZ4Bxh7XlUVSCb75nhp4d."], ["created_at", "2018-05-21 11:14:43.934435"], ["updated_at", "2018-05-21 11:14:43.934435"]]
+  [1m[35m (154.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = ?, "current_sign_in_at" = ?, "last_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_ip" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["sign_in_count", 1], ["current_sign_in_at", "2018-05-21 11:14:44.093350"], ["last_sign_in_at", "2018-05-21 11:14:44.093350"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_ip", "127.0.0.1"], ["updated_at", "2018-05-21 11:14:44.094549"], ["id", 2]]
+  [1m[35m (69.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 398ms (ActiveRecord: 225.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-21 06:14:44 -0500
+Processing by FarmsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering farms/index.html.erb within layouts/application
+  [1m[36mFarm Load (0.1ms)[0m  [1m[34mSELECT "farms".* FROM "farms" WHERE "farms"."user_id" = ?[0m  [["user_id", 2]]
+  Rendered farms/index.html.erb within layouts/application (2.0ms)
+  Rendered partials/_navbar.html.erb (0.8ms)
+Completed 200 OK in 62ms (Views: 59.7ms | ActiveRecord: 0.4ms)
+
+
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mFarm Load (0.1ms)[0m  [1m[34mSELECT "farms".* FROM "farms" WHERE "farms"."user_id" = ?[0m  [["user_id", 2]]
+Started GET "/" for 127.0.0.1 at 2018-05-21 06:24:22 -0500
+Processing by FarmsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering farms/index.html.erb within layouts/application
+  [1m[36mFarm Load (0.2ms)[0m  [1m[34mSELECT "farms".* FROM "farms" WHERE "farms"."user_id" = ?[0m  [["user_id", 2]]
+  Rendered farms/index.html.erb within layouts/application (3.9ms)
+  Rendered partials/_navbar.html.erb (0.8ms)
+Completed 200 OK in 82ms (Views: 56.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-21 06:24:42 -0500
+Processing by FarmsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering farms/index.html.erb within layouts/application
+  [1m[36mFarm Load (0.2ms)[0m  [1m[34mSELECT "farms".* FROM "farms" WHERE "farms"."user_id" = ?[0m  [["user_id", 2]]
+  Rendered farms/index.html.erb within layouts/application (2.4ms)
+  Rendered partials/_navbar.html.erb (0.8ms)
+Completed 200 OK in 53ms (Views: 50.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-21 06:27:54 -0500
+Processing by FarmsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering farms/index.html.erb within layouts/application
+  [1m[36mFarm Load (0.6ms)[0m  [1m[34mSELECT "farms".* FROM "farms" WHERE "farms"."user_id" = ?[0m  [["user_id", 2]]
+  Rendered farms/index.html.erb within layouts/application (4.2ms)
+  Rendered partials/_navbar.html.erb (0.9ms)
+Completed 200 OK in 55ms (Views: 52.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/farms/new" for 127.0.0.1 at 2018-05-21 06:28:01 -0500
+Processing by FarmsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering farms/new.html.erb within layouts/application
+  Rendered farms/_form.html.erb (2.8ms)
+  Rendered farms/new.html.erb within layouts/application (12.2ms)
+  Rendered partials/_navbar.html.erb (1.5ms)
+Completed 200 OK in 94ms (Views: 65.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/farms/new" for 127.0.0.1 at 2018-05-21 06:28:18 -0500
+Processing by FarmsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering farms/new.html.erb within layouts/application
+  Rendered farms/_form.html.erb (1.8ms)
+  Rendered farms/new.html.erb within layouts/application (3.7ms)
+  Rendered partials/_navbar.html.erb (1.4ms)
+Completed 200 OK in 66ms (Views: 63.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/farms" for 127.0.0.1 at 2018-05-21 06:28:25 -0500
+Processing by FarmsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N+OLMf81LdAUosPwcMG4t5/HlqMHA84t+fOAwxqyl6cja6QlNlIjloYv8Iig+hNbNmw5DPcBqd63S45As4Mjag==", "farm"=>{"name"=>"Nuevo"}, "commit"=>"Aceptar"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "farms" ("name", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["name", "Nuevo"], ["created_at", "2018-05-21 11:28:25.212186"], ["updated_at", "2018-05-21 11:28:25.212186"], ["user_id", 2]]
+  [1m[35m (127.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/farms
+Completed 302 Found in 135ms (ActiveRecord: 128.0ms)
+
+
+Started GET "/farms" for 127.0.0.1 at 2018-05-21 06:28:25 -0500
+Processing by FarmsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering farms/index.html.erb within layouts/application
+  [1m[36mFarm Load (0.1ms)[0m  [1m[34mSELECT "farms".* FROM "farms" WHERE "farms"."user_id" = ?[0m  [["user_id", 2]]
+  Rendered farms/index.html.erb within layouts/application (2.4ms)
+  Rendered partials/_navbar.html.erb (0.8ms)
+Completed 200 OK in 52ms (Views: 49.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/farms/2/lots" for 127.0.0.1 at 2018-05-21 06:29:11 -0500
+Processing by LotsController#index as HTML
+  Parameters: {"farm_id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mFarm Load (0.2ms)[0m  [1m[34mSELECT  "farms".* FROM "farms" WHERE "farms"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering lots/index.html.erb within layouts/application
+  [1m[36mLot Load (0.2ms)[0m  [1m[34mSELECT "lots".* FROM "lots" WHERE "lots"."farm_id" = ?[0m  [["farm_id", 2]]
+  Rendered lots/index.html.erb within layouts/application (4.2ms)
+  Rendered partials/_navbar.html.erb (0.9ms)
+Completed 200 OK in 99ms (Views: 64.2ms | ActiveRecord: 1.0ms)
+
+
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mFarm Load (0.4ms)[0m  [1m[34mSELECT  "farms".* FROM "farms" WHERE "farms"."user_id" = ? ORDER BY "farms"."id" DESC LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  [1m[36mLot Load (0.1ms)[0m  [1m[34mSELECT  "lots".* FROM "lots" WHERE "lots"."farm_id" = ? LIMIT ?[0m  [["farm_id", 2], ["LIMIT", 11]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mFarm Load (0.2ms)[0m  [1m[34mSELECT  "farms".* FROM "farms" WHERE "farms"."user_id" = ? ORDER BY "farms"."id" DESC LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  [1m[36mLot Load (0.3ms)[0m  [1m[34mSELECT "lots".* FROM "lots" WHERE "lots"."farm_id" = ?[0m  [["farm_id", 2]]
+Started GET "/farms/2/lots" for 127.0.0.1 at 2018-05-21 06:31:35 -0500
+Processing by LotsController#index as HTML
+  Parameters: {"farm_id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mFarm Load (0.2ms)[0m  [1m[34mSELECT  "farms".* FROM "farms" WHERE "farms"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering lots/index.html.erb within layouts/application
+  [1m[36mLot Load (0.2ms)[0m  [1m[34mSELECT "lots".* FROM "lots" WHERE "lots"."farm_id" = ?[0m  [["farm_id", 2]]
+  Rendered lots/index.html.erb within layouts/application (2.7ms)
+  Rendered partials/_navbar.html.erb (1.4ms)
+Completed 200 OK in 54ms (Views: 50.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/farms/2/lots" for 127.0.0.1 at 2018-05-21 06:31:47 -0500
+Processing by LotsController#index as HTML
+  Parameters: {"farm_id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mFarm Load (0.1ms)[0m  [1m[34mSELECT  "farms".* FROM "farms" WHERE "farms"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering lots/index.html.erb within layouts/application
+  [1m[36mLot Load (0.2ms)[0m  [1m[34mSELECT "lots".* FROM "lots" WHERE "lots"."farm_id" = ?[0m  [["farm_id", 2]]
+  Rendered lots/index.html.erb within layouts/application (2.8ms)
+  Rendered partials/_navbar.html.erb (0.8ms)
+Completed 200 OK in 58ms (Views: 54.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/farms/2/lots" for 127.0.0.1 at 2018-05-21 06:32:08 -0500
+Processing by LotsController#index as HTML
+  Parameters: {"farm_id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mFarm Load (0.1ms)[0m  [1m[34mSELECT  "farms".* FROM "farms" WHERE "farms"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering lots/index.html.erb within layouts/application
+  [1m[36mLot Load (0.2ms)[0m  [1m[34mSELECT "lots".* FROM "lots" WHERE "lots"."farm_id" = ?[0m  [["farm_id", 2]]
+  Rendered lots/index.html.erb within layouts/application (2.5ms)
+  Rendered partials/_navbar.html.erb (1.0ms)
+Completed 200 OK in 73ms (Views: 69.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/farms/2/lots/new" for 127.0.0.1 at 2018-05-21 06:32:10 -0500
+Processing by LotsController#new as HTML
+  Parameters: {"farm_id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mFarm Load (0.1ms)[0m  [1m[34mSELECT  "farms".* FROM "farms" WHERE "farms"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering lots/new.html.erb within layouts/application
+  Rendered lots/_form.html.erb (30.4ms)
+  Rendered lots/new.html.erb within layouts/application (31.7ms)
+  Rendered partials/_navbar.html.erb (0.8ms)
+Completed 200 OK in 92ms (Views: 84.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/farms/2/lots" for 127.0.0.1 at 2018-05-21 06:32:13 -0500
+Processing by LotsController#index as HTML
+  Parameters: {"farm_id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mFarm Load (0.2ms)[0m  [1m[34mSELECT  "farms".* FROM "farms" WHERE "farms"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering lots/index.html.erb within layouts/application
+  [1m[36mLot Load (0.1ms)[0m  [1m[34mSELECT "lots".* FROM "lots" WHERE "lots"."farm_id" = ?[0m  [["farm_id", 2]]
+  Rendered lots/index.html.erb within layouts/application (2.4ms)
+  Rendered partials/_navbar.html.erb (0.8ms)
+Completed 200 OK in 51ms (Views: 46.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/farms" for 127.0.0.1 at 2018-05-21 06:32:14 -0500
+Processing by FarmsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering farms/index.html.erb within layouts/application
+  [1m[36mFarm Load (0.1ms)[0m  [1m[34mSELECT "farms".* FROM "farms" WHERE "farms"."user_id" = ?[0m  [["user_id", 2]]
+  Rendered farms/index.html.erb within layouts/application (3.0ms)
+  Rendered partials/_navbar.html.erb (0.8ms)
+Completed 200 OK in 60ms (Views: 56.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/farms/2/edit" for 127.0.0.1 at 2018-05-21 06:32:18 -0500
+Processing by FarmsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mFarm Load (0.1ms)[0m  [1m[34mSELECT  "farms".* FROM "farms" WHERE "farms"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering farms/edit.html.erb within layouts/application
+  Rendered farms/_form.html.erb (2.4ms)
+  Rendered farms/edit.html.erb within layouts/application (5.2ms)
+  Rendered partials/_navbar.html.erb (0.9ms)
+Completed 200 OK in 93ms (Views: 65.7ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/farms/2" for 127.0.0.1 at 2018-05-21 06:32:58 -0500
+Processing by FarmsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WLsuKzTml1o3A9m9q8nIrtlfYXNT2xlcDLpmgd77rv1MMwE//YGZHKWO6sV78mNCcPTO3KPZfq9CAmgCd8oaMA==", "farm"=>{"name"=>"Micultivo"}, "commit"=>"Aceptar", "id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mFarm Load (0.1ms)[0m  [1m[34mSELECT  "farms".* FROM "farms" WHERE "farms"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "farms" SET "name" = ?, "updated_at" = ? WHERE "farms"."id" = ?[0m  [["name", "Micultivo"], ["updated_at", "2018-05-21 11:32:58.249255"], ["id", 2]]
+  [1m[35m (181.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/farms/2
+Completed 302 Found in 191ms (ActiveRecord: 183.1ms)
+
+
+Started GET "/farms/2" for 127.0.0.1 at 2018-05-21 06:32:58 -0500
+Processing by FarmsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mFarm Load (0.1ms)[0m  [1m[34mSELECT  "farms".* FROM "farms" WHERE "farms"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering farms/show.html.erb within layouts/application
+  Rendered farms/show.html.erb within layouts/application (0.9ms)
+  Rendered partials/_navbar.html.erb (1.0ms)
+Completed 200 OK in 72ms (Views: 58.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/farms" for 127.0.0.1 at 2018-05-21 06:33:15 -0500
+Processing by FarmsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering farms/index.html.erb within layouts/application
+  [1m[36mFarm Load (0.1ms)[0m  [1m[34mSELECT "farms".* FROM "farms" WHERE "farms"."user_id" = ?[0m  [["user_id", 2]]
+  Rendered farms/index.html.erb within layouts/application (2.8ms)
+  Rendered partials/_navbar.html.erb (0.9ms)
+Completed 200 OK in 54ms (Views: 51.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/farms/2/lots" for 127.0.0.1 at 2018-05-21 06:33:17 -0500
+Processing by LotsController#index as HTML
+  Parameters: {"farm_id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mFarm Load (0.1ms)[0m  [1m[34mSELECT  "farms".* FROM "farms" WHERE "farms"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering lots/index.html.erb within layouts/application
+  [1m[36mLot Load (0.2ms)[0m  [1m[34mSELECT "lots".* FROM "lots" WHERE "lots"."farm_id" = ?[0m  [["farm_id", 2]]
+  Rendered lots/index.html.erb within layouts/application (2.7ms)
+  Rendered partials/_navbar.html.erb (1.0ms)
+Completed 200 OK in 55ms (Views: 51.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/farms/2/lots" for 127.0.0.1 at 2018-05-21 06:33:40 -0500
+Processing by LotsController#index as HTML
+  Parameters: {"farm_id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mFarm Load (0.1ms)[0m  [1m[34mSELECT  "farms".* FROM "farms" WHERE "farms"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering lots/index.html.erb within layouts/application
+  [1m[36mLot Load (0.2ms)[0m  [1m[34mSELECT "lots".* FROM "lots" WHERE "lots"."farm_id" = ?[0m  [["farm_id", 2]]
+  Rendered lots/index.html.erb within layouts/application (2.5ms)
+  Rendered partials/_navbar.html.erb (2.6ms)
+Completed 200 OK in 60ms (Views: 56.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/farms/2/lots" for 127.0.0.1 at 2018-05-21 06:34:08 -0500
+Processing by LotsController#index as HTML
+  Parameters: {"farm_id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mFarm Load (0.1ms)[0m  [1m[34mSELECT  "farms".* FROM "farms" WHERE "farms"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering lots/index.html.erb within layouts/application
+  [1m[36mLot Load (0.1ms)[0m  [1m[34mSELECT "lots".* FROM "lots" WHERE "lots"."farm_id" = ?[0m  [["farm_id", 2]]
+  Rendered lots/index.html.erb within layouts/application (2.8ms)
+  Rendered partials/_navbar.html.erb (1.7ms)
+Completed 200 OK in 64ms (Views: 59.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/farms/2/lots/new" for 127.0.0.1 at 2018-05-21 06:34:10 -0500
+Processing by LotsController#new as HTML
+  Parameters: {"farm_id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mFarm Load (0.1ms)[0m  [1m[34mSELECT  "farms".* FROM "farms" WHERE "farms"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering lots/new.html.erb within layouts/application
+  Rendered lots/_form.html.erb (2.0ms)
+  Rendered lots/new.html.erb within layouts/application (3.2ms)
+  Rendered partials/_navbar.html.erb (0.9ms)
+Completed 200 OK in 53ms (Views: 49.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/farms/2/lots/new" for 127.0.0.1 at 2018-05-21 06:35:19 -0500
+Processing by LotsController#new as HTML
+  Parameters: {"farm_id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mFarm Load (0.1ms)[0m  [1m[34mSELECT  "farms".* FROM "farms" WHERE "farms"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering lots/new.html.erb within layouts/application
+  Rendered lots/_form.html.erb (2.5ms)
+  Rendered lots/new.html.erb within layouts/application (3.8ms)
+  Rendered partials/_navbar.html.erb (0.9ms)
+Completed 200 OK in 58ms (Views: 54.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/farms/2/lots" for 127.0.0.1 at 2018-05-21 06:35:31 -0500
+Processing by LotsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZY4YD9K+5B8FdP/TwsvTg4e41nE/NYMUj3AVgL3hd7dxBjcbG9nqWZf5zKsS8HhvLhN53s835OfByBsDFNDDeg==", "lot"=>{"name"=>"lote1", "location"=>"centro", "farm_id"=>"2"}, "commit"=>"Aceptar", "farm_id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFarm Load (0.1ms)[0m  [1m[34mSELECT  "farms".* FROM "farms" WHERE "farms"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "lots" ("name", "location", "farm_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "lote1"], ["location", "centro"], ["farm_id", 2], ["created_at", "2018-05-21 11:35:31.963746"], ["updated_at", "2018-05-21 11:35:31.963746"]]
+  [1m[35m (142.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/farms/2/lots
+Completed 302 Found in 151ms (ActiveRecord: 143.4ms)
+
+
+Started GET "/farms/2/lots" for 127.0.0.1 at 2018-05-21 06:35:32 -0500
+Processing by LotsController#index as HTML
+  Parameters: {"farm_id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mFarm Load (0.1ms)[0m  [1m[34mSELECT  "farms".* FROM "farms" WHERE "farms"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering lots/index.html.erb within layouts/application
+  [1m[36mLot Load (0.1ms)[0m  [1m[34mSELECT "lots".* FROM "lots" WHERE "lots"."farm_id" = ?[0m  [["farm_id", 2]]
+  Rendered lots/index.html.erb within layouts/application (4.6ms)
+  Rendered partials/_navbar.html.erb (0.8ms)
+Completed 200 OK in 56ms (Views: 53.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/farms/2/lots" for 127.0.0.1 at 2018-05-21 06:37:01 -0500
+Processing by LotsController#index as HTML
+  Parameters: {"farm_id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mFarm Load (0.2ms)[0m  [1m[34mSELECT  "farms".* FROM "farms" WHERE "farms"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering lots/index.html.erb within layouts/application
+  [1m[36mLot Load (0.2ms)[0m  [1m[34mSELECT "lots".* FROM "lots" WHERE "lots"."farm_id" = ?[0m  [["farm_id", 2]]
+  Rendered lots/index.html.erb within layouts/application (10.9ms)
+  Rendered partials/_navbar.html.erb (0.9ms)
+Completed 200 OK in 103ms (Views: 59.5ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/farms/2/lots/2/grooves" for 127.0.0.1 at 2018-05-21 06:38:58 -0500
+Processing by GroovesController#index as HTML
+  Parameters: {"farm_id"=>"2", "lot_id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mLot Load (0.2ms)[0m  [1m[34mSELECT  "lots".* FROM "lots" WHERE "lots"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "grooves" WHERE "grooves"."lot_id" = ?[0m  [["lot_id", 2]]
+  [1m[36mGroove Load (0.1ms)[0m  [1m[34mSELECT "grooves".* FROM "grooves" WHERE "grooves"."lot_id" = ?[0m  [["lot_id", 2]]
+  Rendering grooves/index.html.erb within layouts/application
+  Rendered graphics/_heatline_chart.html.erb (0.6ms)
+  Rendered grooves/index.html.erb within layouts/application (23.9ms)
+  Rendered partials/_navbar.html.erb (0.9ms)
+Completed 200 OK in 107ms (Views: 98.0ms | ActiveRecord: 1.0ms)
+
+

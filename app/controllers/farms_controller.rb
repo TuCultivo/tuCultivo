@@ -29,7 +29,7 @@ class FarmsController < ApplicationController
 
     respond_to do |format|
       if @farm.save
-        format.html { redirect_to farms_path, notice: 'Farm was successfully created.' }
+        format.html { redirect_to farms_path, notice: 'Cultivo creado satisfactoriamente.' }
         format.json { render :show, status: :created, location: @farm }
       else
         format.html { render :new }

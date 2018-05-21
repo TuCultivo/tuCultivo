@@ -1,38 +1,40 @@
 <div class="center">
   <p id="notice"><%= notice %></p>
 
-  <h1>Lotes del cultivo: <%= @farm.name%></h1>
-  <h2>Id del cultivo: <%= @farm.id%></h2>
+  <h2>Lotes del cultivo: <%= @farm.name%></h2>
+  <h4>Identificador del cultivo: <%= @farm.id%></h4>
 
   <%= link_to 'Crear lote', new_farm_lot_path, {style:'color:#FFFFFF;',class:'btn btn-success right-button'} %>
   <%= link_to 'Volver', farms_path , {style:'color:#FFFFFF;',class:'btn btn-danger right-button'} %>
-
-
-
-  <table class="table">
-    <thead>
-      <tr>
-        <th>ID</th>
-        <th>Nombre</th>
-        <th>Ubicación</th>
-        <th colspan="3"></th>
-      </tr>
-    </thead>
-
-    <tbody>
-      <% @lots.each do |lot| %>
+  <% if @lots.present? %>
+    <table class="table">
+      <thead>
         <tr>
-          <td><%= lot.id %></td>
-          <td><%= lot.name %></td>
-          <td><%= lot.location %></td>
-          <td><%= link_to 'Ver surcos', farm_lot_grooves_path(lot_id: lot.id) %> </td>
-          <td><%= link_to 'Editar', edit_farm_lot_path(id: lot.id) %></td>
-          <td><%= link_to 'Eliminar', controller: "lots", method: "delete", data: { confirm: 'Are you sure?' } %></td>
+          <th>Identificador</th>
+          <th>Nombre</th>
+          <th>Ubicación</th>
+          <th colspan="3"></th>
         </tr>
-      <% end %>
-    </tbody>
-  </table>
+      </thead>
 
+      <tbody>
+        <% @lots.each do |lot| %>
+          <tr>
+            <td><%= lot.id %></td>
+            <td><%= lot.name %></td>
+            <td><%= lot.location %></td>
+            <td><%= link_to 'Ver surcos', farm_lot_grooves_path(lot_id: lot.id) %> </td>
+            <td><%= link_to 'Editar', edit_farm_lot_path(id: lot.id) %></td>
+            <td><%= link_to 'Eliminar', controller: "lots", method: "delete", data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  <%else%>
+    <p class="left">Usted no ha creado ningun lote para este cultivo,
+     para hacerlo haga clic en "Crear Lote".</p>
+  <%end%>
+  
   <br>
 <div class="center">
 

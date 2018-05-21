@@ -29,7 +29,7 @@ class LotsController < ApplicationController
 
     respond_to do |format|
       if @lot.save
-        format.html { redirect_to farm_lots_path, notice: 'Lot was successfully created.' }
+        format.html { redirect_to farm_lots_path, notice: 'Lote creado satisfactoriamente.' }
         format.json { render :show, status: :created, location: @lot }
       else
         format.html { render :new }

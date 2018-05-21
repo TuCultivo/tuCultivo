@@ -2,27 +2,33 @@
   <p id="notice"><%= notice %></p>
   <h1>Cultivos</h1>
   <%= link_to 'Crear Cultivo', new_farm_path, {style:'color:#FFFFFF;',class:'btn btn-success right-button'} %>
-  <table class="table">
-    <thead>
-      <tr>
-        <th>ID</th>
-        <th>Nombre</th>
-        <th colspan="3"></th>
-      </tr>
-    </thead>
-
-    <tbody>
-      <% @farms.each do |farm| %>
+  
+  <% if current_user.farms.present? %>
+    <table class="table">
+      <thead>
         <tr>
-          <td ><%= farm.id %></td>
-          <td><%= farm.name %></td>
-          <td><%= link_to 'Ver lotes', farm_lots_path(farm.id) %> </td>
-          <td><%= link_to 'Editar', edit_farm_path(farm) %></td>
-          <td><%= link_to 'Eliminar', farm, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <th>Identificador</th>
+          <th>Nombre</th>
+          <th colspan="3"></th>
         </tr>
-      <% end %>
-    </tbody>
-  </table>
+      </thead>
+
+      <tbody>
+        <% @farms.each do |farm| %>
+          <tr>
+            <td ><%= farm.id %></td>
+            <td><%= farm.name %></td>
+            <td><%= link_to 'Ver lotes', farm_lots_path(farm.id) %> </td>
+            <td><%= link_to 'Editar', edit_farm_path(farm) %></td>
+            <td><%= link_to 'Eliminar', farm, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  <%else%>
+    <p class="left">Usted no ha creado ningún cultivo todavía, para hacerlo haga clic en "Crear Cultivo".</p>
+  <%end%>
+    
 </div>
 <br>
 

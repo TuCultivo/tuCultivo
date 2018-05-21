@@ -30,6 +30,8 @@ class PlagueReportsController < ApplicationController
   end
 
   def index
+    @initial_date = Date.today
+    @final_date = Date.today
     column_chart_data(@groove.plague_reports)
   end
 
@@ -72,10 +74,21 @@ class PlagueReportsController < ApplicationController
   
   def find_reports
     dates = params[:dates]
-    initial_date = params[:dates][:initial_date]
-    final_date = params[:dates][:final_date]
-    @plague_reports = @groove.plague_reports.where(reportDate: initial_date..final_date)
-    column_chart_data(@plague_reports)
+    @initial_date = params[:dates][:initial_date]
+    @final_date = params[:dates][:final_date]
+
+    if @final_date < @initial_date
+      redirect_to farm_lot_groofe_plague_reports_path, notice: 'La fecha final debe ser mayor o igual a la fecha inicial.' 
+    else
+      p "hola"
+      @plague_reports = @groove.plague_reports.where(reportDate: @initial_date..@final_date)
+      p " resultado #{@plague_reports.count}"
+      p "hola"
+      column_chart_data(@plague_reports)
+      # redirect_to farm_lot_groofe_plague_reports_path(groofe_id: @groove.id), notice: 'Busqueda realizada.' 
+      
+      # redirect_to :back
+    end
   end
 
   private

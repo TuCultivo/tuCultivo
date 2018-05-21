@@ -2,15 +2,16 @@
   <h3>Buscar Reporte</h3>
   <div class="field">
     <%= form.label :fecha_inicial %>
-    <%= date_field :dates,:fecha_inicial, class:"form-control" %>
+    <%= date_field :dates,:initial_date,value:@initial_date, class:"form-control"%>
   </div>
 
   <div class="field">
     <%= form.label :fecha_final %>
-    <%= date_field :dates,:fecha_final, class:"form-control" %>
+    <%= date_field :dates,:final_date,value:@final_date, class:"form-control" %>
   </div>
   <br>
   <div class="actions">
     <%= form.submit "Buscar",style:'color:#FFFFFF;',class:'btn btn-success left' %>
   </div>
+   <%= link_to 'Volver', farm_lot_grooves_path , {style:'color:#FFFFFF;',class:'btn btn-danger'} %>
 <% end %>
