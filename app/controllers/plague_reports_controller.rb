@@ -20,7 +20,7 @@ class PlagueReportsController < ApplicationController
       p "Reporte encontrado"  
       sick_plant = @plague_report.sick_plants.create(sick_plant_params)
     end
-    send_alert
+    #send_alert
   end
 
   def index
@@ -61,11 +61,11 @@ class PlagueReportsController < ApplicationController
     gon.heatline_data = data
   end
   
-  def send_alert
-    ReportMailer.sample_email('msierr37@eafit.edu.co').deliver
+  #def send_alert
+    #ReportMailer.sample_email('msierr37@eafit.edu.co').deliver
         # format.html { redirect_to farm_lot_, notice: 'Hay una plaga en el cultivo' }
         #format.json { render :show, status: :created, location: @user }
-  end
+  #end
   
   def find_reports
     dates = params[:dates]
