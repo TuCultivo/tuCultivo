@@ -12,7 +12,7 @@ class GroovesController < ApplicationController
     
     @grooves.each_with_index do |groove,i|
       if groove.plague_reports.present?
-        show_lot = true
+        @show_lot = true
         sick_plants = groove.plague_reports.last.sick_plants.pluck(:location)
         (0..groove.quantity-1).each do |j|
           if sick_plants.include?(j)
@@ -23,9 +23,7 @@ class GroovesController < ApplicationController
         end
       end
     end
-
     gon.heatline_data = data
-    # heatline chart
   end
   # GET /grooves/1
   # GET /grooves/1.json

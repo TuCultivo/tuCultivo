@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180517002240) do
+ActiveRecord::Schema.define(version: 20180521184027) do
 
   create_table "collaborations", force: :cascade do |t|
     t.integer "node_id"
@@ -43,6 +43,7 @@ ActiveRecord::Schema.define(version: 20180517002240) do
     t.integer "farm_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "key"
     t.index ["farm_id"], name: "index_lots_on_farm_id"
   end
 

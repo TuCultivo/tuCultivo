@@ -18,13 +18,7 @@ class PlagueReportsController < ApplicationController
       end
     else
       p "Reporte encontrado"  
-      @plague_report.sick_plants.find_by(sick_plant_params)
-      if @plague_report.present?
-        p "Si mijo"
-        # sick_plant = @plague_report.sick_plants.create(sick_plant_params)
-      else 
-        p 'no'
-      end
+      sick_plant = @plague_report.sick_plants.create(sick_plant_params)
     end
     send_alert
   end

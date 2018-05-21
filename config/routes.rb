@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   end
 
   post '/grooves/:groofe_id/reports', to: 'plague_reports#create'
-
+  post '/plague_reports/',to: 'plague_reports#create'
   # resources :nodes do
   #   resources :sensors
   #   delete "/sensors/:id", to: "sensors#destroy", as:"delete_sensor"
