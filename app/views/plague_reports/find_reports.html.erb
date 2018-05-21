@@ -1,25 +1,32 @@
 <div class="center">
   <%= render 'form', plague_report: @plague_report %>
-  <table class="table">
-    <thead>
-      <tr>
-        <th>Fecha</th>
-        <th>Cantidad de plagas</th>
-        
-        <th colspan="3"></th>
-      </tr>
-    </thead>
-
-    <tbody>
-      <% @plague_reports.each do |report| %>
+  
+  <%if @plague_reports.present? %>
+    <table class="table">
+      <thead>
         <tr>
-          <td><%= report.reportDate %></td>
-          <td><%= report.sick_plants.count %></td>
-          <td><%= link_to 'Mostrar', farm_lot_groofe_plague_report_path(id: report.id) %></td>
+          <th>Fecha</th>
+          <th>Cantidad de plagas</th>
+          
+          <th colspan="3"></th>
         </tr>
-      <% end %>
-    </tbody>
-  </table>
-  <%= render 'graphics/column_chart', plague_report: @plague_report %>
+      </thead>
+
+      <tbody>
+        <% @plague_reports.each do |report| %>
+          <tr>
+            <td><%= report.reportDate %></td>
+            <td><%= report.sick_plants.count %></td>
+            <td><%= link_to 'Mostrar', farm_lot_groofe_plague_report_path(id: report.id) %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+    <%= render 'graphics/column_chart', plague_report: @plague_report %>
+  <%else%>
+    </br>
+    <h2 class="center">No se encontró ningun reporte entre <%=@initial_date%> 
+      y <%=@final_date%></h2>
+  <%end%>
 </div>
 

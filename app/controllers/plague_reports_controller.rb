@@ -32,7 +32,8 @@ class PlagueReportsController < ApplicationController
   def index
     @initial_date = Date.today
     @final_date = Date.today
-    column_chart_data(@groove.plague_reports)
+    @plague_reports = @groove.plague_reports
+    column_chart_data(@plague_reports)
   end
 
   def column_chart_data(reports)

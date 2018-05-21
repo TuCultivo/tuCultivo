@@ -2,12 +2,13 @@
 
 <div class="center">
   <h1>Reportes de Plagas del Surco <%= @groove.id %></h1>
-  <% if @groove.plague_reports.present?  %>
     <%= render 'form', plague_report: @plague_report %>
     <div class="center">
-      <%= render 'graphics/column_chart', plague_report: @plague_report %>
+      <%if @plague_reports.present? %>
+        <%= render 'graphics/column_chart', plague_report: @plague_report %>
+      <%else%>
+        </br>
+        <h2 class="center">No se hallaron hay reportes en este surco</h2>
+      <%end %>
     </div>
-  <% else %>
-    <p class="center">Este surco no tiene reportes aún</p>
-  <% end %>
 </div>
