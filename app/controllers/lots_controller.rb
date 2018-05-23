@@ -1,7 +1,7 @@
 class LotsController < ApplicationController
   before_action :authenticate_user!
   before_action :set_lot, only: [:show, :edit, :update, :destroy]
-  before_action :set_farm, only: [:new,:index]
+  before_action :set_farm, only: [:new,:index,:edit,:update]
   # GET /lots
   # GET /lots.json
   def index
@@ -47,7 +47,7 @@ class LotsController < ApplicationController
   def update
     respond_to do |format|
       if @lot.update(lot_params)
-        format.html { redirect_to @lot, notice: 'Lot was successfully updated.' }
+        format.html { redirect_to farm_lots_path, notice: 'Lote actualizado satisfactoriamente' }
         format.json { render :show, status: :ok, location: @lot }
       else
         format.html { render :edit }
@@ -60,8 +60,9 @@ class LotsController < ApplicationController
   # DELETE /lots/1.json
   def destroy
     @lot.destroy
+    p "destroy"
     respond_to do |format|
-      format.html { redirect_to lots_url, notice: 'Lot was successfully destroyed.' }
+      format.html { redirect_to farm_lots_url, notice: 'Lot was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
