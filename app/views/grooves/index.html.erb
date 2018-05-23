@@ -23,7 +23,7 @@
             <td><%= groofe.quantity %></td>
             <td><%= link_to 'Ver reportes', farm_lot_groofe_plague_reports_path(groofe_id: groofe.id) %></td> 
             <td><%= link_to 'Editar', edit_farm_lot_groofe_path(id: groofe.id) %></td>
-            <td><%= link_to 'Eliminar', controller: "grooves", method: "destroy", data: { confirm: 'Are you sure?' } %></td>
+            <td><%= link_to 'Eliminar',farm_lot_groofe_path(id: groofe.id), method: "delete", data: { confirm: 'Are you sure?' } %></td>
           </tr>
         <% end %>
       </tbody>

@@ -25,7 +25,7 @@
             <td><%= lot.location %></td>
             <td><%= link_to 'Ver surcos', farm_lot_grooves_path(lot_id: lot.id) %> </td>
             <td><%= link_to 'Editar', edit_farm_lot_path(id: lot.id) %></td>
-            <td><%= link_to 'Eliminar', controller: "lots", method: "delete", data: { confirm: 'Are you sure?' } %></td>
+            <td><%= link_to 'Eliminar', farm_lot_path(id: lot.id), method: "delete", data: { confirm: 'Are you sure?' } %></td>
           </tr>
         <% end %>
       </tbody>

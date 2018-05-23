@@ -1,0 +1,28 @@
+<%= form_with(url: update_farm_lot_groofe_path, method: :put, local: true) do |form| %>
+
+  <% if groofe.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(groofe.errors.count, "error") %> prohibited this groofe from being saved:</h2>
+
+      <ul>
+      <% groofe.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :quantity, "Cantidad de plantas en el surco" %>
+    <%= number_field :groofe,:quantity, id: :groofe_quantity,class:"form-control" %>
+  </div>
+
+  <div class="field">
+    <%= hidden_field(:groofe, :lot_id, value: @lot.id) %>
+  </div>
+  <br>
+  
+  <div class="actions">
+    <%= form.submit "Aceptar", {class:'btn btn-success right-button'} %>
+  </div>
+<% end %>

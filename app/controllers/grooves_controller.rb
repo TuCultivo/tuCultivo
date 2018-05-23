@@ -1,7 +1,7 @@
 class GroovesController < ApplicationController
   before_action :authenticate_user!
   before_action :set_groofe, only: [:show, :edit, :update, :destroy]
-  before_action :set_lot, only: [:new,:index]
+  before_action :set_lot, only: [:new,:index, :edit]
   # GET /grooves
   # GET /grooves.json
   def index
@@ -46,7 +46,7 @@ class GroovesController < ApplicationController
 
     respond_to do |format|
       if @groofe.save
-        format.html { redirect_to  farm_lot_grooves_path, notice: 'Groove was successfully created.' }
+        format.html { redirect_to  farm_lot_grooves_path, notice: 'El Surco fue creado satisfactoriamente.' }
         format.json { render :show, status: :created, location: @groofe }
       else
         format.html { render :new }
@@ -60,7 +60,7 @@ class GroovesController < ApplicationController
   def update
     respond_to do |format|
       if @groofe.update(groofe_params)
-        format.html { redirect_to @groofe, notice: 'Groove was successfully updated.' }
+        format.html { redirect_to farm_lot_grooves_path, notice: 'El Surco fue actualizado satisfactoriamente.' }
         format.json { render :show, status: :ok, location: @groofe }
       else
         format.html { render :edit }
@@ -74,7 +74,7 @@ class GroovesController < ApplicationController
   def destroy
     @groofe.destroy
     respond_to do |format|
-      format.html { redirect_to grooves_url, notice: 'Groove was successfully destroyed.' }
+      format.html { redirect_to farm_lot_grooves_url, notice: 'Groove was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
