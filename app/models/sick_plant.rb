@@ -1,4 +1,4 @@
 class SickPlant < ApplicationRecord
   belongs_to :plague_report
-  validates :location, uniqueness: true
+  validates :location, presence: true
 end

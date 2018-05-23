@@ -18,7 +18,18 @@ class PlagueReportsController < ApplicationController
       end
     else
       p "Reporte encontrado"  
-      sick_plant = @plague_report.sick_plants.create(sick_plant_params)
+      sick_plants = @plague_report.sick_plants.pluck(:location)
+      location = sick_plant_params[:location]
+      if sick_plants.exclude?(location)
+        sick_plant = @plague_report.sick_plants.new(sick_plant_params)
+        if sick_plant.save
+          p "planta enferma #{location} ingresada" 
+        else
+          p "planta enferma #{location} no ingresada"
+        end  
+      else
+        p "la ubicacion #{location} ya habia sido ingresada "
+      end
     end
     #send_alert
   end
