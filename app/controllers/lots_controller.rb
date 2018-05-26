@@ -1,7 +1,10 @@
 class LotsController < ApplicationController
-  before_action :authenticate_user!
-  before_action :set_lot, only: [:show, :edit, :update, :destroy]
+  require 'json'
+  protect_from_forgery with: :null_session
+  before_action :authenticate_user!,except: [:get_info]
+  before_action :set_lot, only: [:show, :edit, :update, :destroy,:get_info]
   before_action :set_farm, only: [:new,:index,:edit,:update]
+  
   # GET /lots
   # GET /lots.json
   def index
@@ -64,6 +67,18 @@ class LotsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to farm_lots_url, notice: 'Lot was successfully destroyed.' }
       format.json { head :no_content }
+    end
+  end
+
+  # POST '/lots/1/get_info'
+  def get_info
+  
+    grooves = Groove.select(:id,:quantity).where(lot_id:@lot.id)
+    info = ["farm_id":@lot.farm_id]
+    info.append(grooves)
+    
+    respond_to do |format|
+      format.json {render json: info.to_json}
     end
   end
 
