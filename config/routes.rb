@@ -15,6 +15,8 @@ Rails.application.routes.draw do
 
   post '/grooves/:groofe_id/reports', to: 'plague_reports#create'
   post '/plague_reports/',to: 'plague_reports#create'
+  post '/lots/:id/get_info',to: 'lots#get_info', as: 'get_lot_info'
+  
   # resources :nodes do
   #   resources :sensors
   #   delete "/sensors/:id", to: "sensors#destroy", as:"delete_sensor"
