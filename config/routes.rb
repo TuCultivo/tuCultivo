@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   scope 'farms' do
     put '/:farm_id/lots/:id', to: 'lots#update' , as: 'update_farm_lot' 
     put '/:farm_id/lots/:lot_id/grooves/:id', to: 'grooves#update', as: 'update_farm_lot_groofe'
-    get "/:id/summary", to: "farms#summary"
+    get "/:id/summary", to: "farms#summary",as: 'summary'
   end
 
   post '/grooves/:groofe_id/reports', to: 'plague_reports#create'
@@ -29,5 +29,5 @@ Rails.application.routes.draw do
   # end
 
   # post '/sensors/:id/values', to: 'sensors#create_value'
-  root to: "welcome#index"
+  root to: "farms#index"
 end

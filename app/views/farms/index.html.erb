@@ -18,6 +18,7 @@
           <tr>
             <td ><%= farm.id %></td>
             <td><%= farm.name %></td>
+            <td><%= link_to 'Ver reporte', summary_path(farm.id) %> </td>
             <td><%= link_to 'Ver lotes', farm_lots_path(farm.id) %> </td>
             <td><%= link_to 'Editar', edit_farm_path(farm) %></td>
             <td><%= link_to 'Eliminar', farm, method: :delete, data: { confirm: 'Are you sure?' } %></td>

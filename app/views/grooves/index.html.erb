@@ -8,7 +8,7 @@
   <%= link_to 'Volver', farm_lots_path , {style:'color:#FFFFFF;',class:'btn btn-danger right-button'} %>
   <% if @grooves.present? %>
     <form action="http://pi2tucultivo.dis.eafit.edu.co/<%=@lot.id%>">
-        <input type="submit" value="Subir imagenes de este lote" />
+        <input type="submit" value="Subir imagenes de este lote" class="btn btn-info"/>
     </form>
     <table class="table">
       <thead>
