@@ -2,8 +2,9 @@
 
 <div class="center">
   <h1>Reportes de Plagas del Surco <%= @groove.id %></h1>
-    <%= render 'form', plague_report: @plague_report %>
+
     <div class="center">
+      <%= render 'form', plague_report: @plague_report %>
       <%if @plague_reports.present? %>
         <%= render 'graphics/column_chart', plague_report: @plague_report %>
       <%else%>

@@ -1,0 +1,30 @@
+<h2>Resumen del cultivo <%= @farm.name%></h1>
+<h4>Identificador del cultivo: <%= @farm.id%></h4>
+
+<% if @lots.present? %>
+    <% @lots.each do |lot| %>
+        <% if lot.g%>
+            <table class="table">
+                <thead>
+                    <tr>
+                    <th>Lote</th>
+                    <th>Nombre</th>
+                    <th>Ubicación</th>
+                    <th colspan="3"></th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td><%= lot.id %></td>
+                        <td><%= lot.name %></td>
+                        <td><%= lot.location %></td>
+                    </tr>
+                    <% @lots.each do |lot| %>
+                    <% end %>
+                </tbody>
+        </table>
+    <% end %>
+<% else%>
+    <h2 class="center">Este cultivo no tiene lotes registrados</h2>
+<% end%>

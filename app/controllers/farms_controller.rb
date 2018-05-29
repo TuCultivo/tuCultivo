@@ -1,6 +1,6 @@
 class FarmsController < ApplicationController
   before_action :authenticate_user!
-  before_action :set_farm, only: [:show, :edit, :update, :destroy]
+  before_action :set_farm, only: [:show, :edit, :update, :destroy,:summary]
 
   # GET /farms
   # GET /farms.json
@@ -60,6 +60,10 @@ class FarmsController < ApplicationController
       format.html { redirect_to farms_url, notice: 'Farm was successfully destroyed.' }
       format.json { head :no_content }
     end
+  end
+
+  def summary
+    @lots = @farm.lots
   end
 
   private
