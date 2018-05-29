@@ -4,12 +4,14 @@
   <h1>Reportes de Plagas del Surco <%= @groove.id %></h1>
 
     <div class="center">
-      <%= render 'form', plague_report: @plague_report %>
       <%if @plague_reports.present? %>
+         <%= render 'form', plague_report: @plague_report %>
         <%= render 'graphics/column_chart', plague_report: @plague_report %>
       <%else%>
         </br>
-        <h2 class="center">No se hallaron hay reportes en este surco</h2>
+        <h2 class="center">No se hallaron hay reportes en este surco
+          <%= link_to 'Volver', farm_lot_grooves_path , {style:'color:#FFFFFF;',class:'btn btn-danger'} %>
+        </h2>
       <%end %>
     </div>
 </div>

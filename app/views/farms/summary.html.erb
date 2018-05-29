@@ -1,30 +1,76 @@
-<h2>Resumen del cultivo <%= @farm.name%></h1>
-<h4>Identificador del cultivo: <%= @farm.id%></h4>
+<div class="center">
+    <h2>Resumen del cultivo <%= @farm.name%></h1>
+    <h4>Identificador del cultivo: <%= @farm.id%></h4>
+    
+    <%= link_to 'Volver', farms_path , {style:'color:#FFFFFF;',class:'btn btn-danger right-button'} %>
+    <div>
+        <% if @lots.present? %>
+            <% @lots.each_with_index do |lot,l| %>
+                <% if lot.grooves.present? %>
+                    <div class="panel panel-primary">    
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Lote <%= l+1 %></h3>
+                        </div>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                <th>Identificador</th>
+                                <th>Nombre</th>
+                                <th>Ubicación</th>
+                                <th colspan="3"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><%= lot.id %></td>
+                                    <td><%= lot.name %></td>
+                                    <td><%= lot.location %></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="panel panel-success inside">
+                            <br>
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Surcos</h3>
+                            </div>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                    <th>#</th>
+                                    <th>Identificador</th>
+                                    <th>Cantidad de plantas</th>
+                                    <th>% de plantas infectadas</th>
+                                    <th colspan="3"></th>
+                                    </tr>
+                                </thead>
 
-<% if @lots.present? %>
-    <% @lots.each do |lot| %>
-        <% if lot.g%>
-            <table class="table">
-                <thead>
-                    <tr>
-                    <th>Lote</th>
-                    <th>Nombre</th>
-                    <th>Ubicación</th>
-                    <th colspan="3"></th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr>
-                        <td><%= lot.id %></td>
-                        <td><%= lot.name %></td>
-                        <td><%= lot.location %></td>
-                    </tr>
-                    <% @lots.each do |lot| %>
-                    <% end %>
-                </tbody>
-        </table>
-    <% end %>
-<% else%>
-    <h2 class="center">Este cultivo no tiene lotes registrados</h2>
-<% end%>
+                                <tbody>
+                                    <% lot.grooves.each_with_index do |groove,g| %>
+                                        <tr>
+                                            <td><%= g+1%></td>
+                                            <td><%= groove.id %></td>
+                                            <td><%= groove.quantity %></td>
+                                            <% if groove.plague_reports.present? %>
+                                                <td><%= (groove.plague_reports.last.sick_plants.count/ groove.quantity.to_f)*100%></td>
+                                            <% else %>
+                                                <td>No tiene reportes</td>
+                                            <% end %>
+                                        </tr>
+                                    <% end %>
+                                </tbody>
+                            </table>
+                        </div>        
+                    </div>
+                <%else%>
+                    <h4>No hay surcos registrados para el lote <%= lot.name %></h4>    
+                <%end%>
+            <% end %>
+        <% else%>
+            <div class="center">
+                <h2 class="center">Este cultivo no tiene lotes registrados
+                    <%= link_to 'Crear lote', new_farm_lot_path(@farm.id), {style:'color:#FFFFFF;',class:'btn btn-success'} %>
+                </h2>
+            </div>
+        <% end%>
+    </div>
+</div>
