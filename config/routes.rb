@@ -10,8 +10,11 @@ Rails.application.routes.draw do
     end  
   end
 
-  put '/farms/:farm_id/lots/:id', to: 'lots#update' , as: 'update_farm_lot' 
-  put '/farms/:farm_id/lots/:lot_id/grooves/:id', to: 'grooves#update', as: 'update_farm_lot_groofe'
+  scope 'farms' do
+    put '/:farm_id/lots/:id', to: 'lots#update' , as: 'update_farm_lot' 
+    put '/:farm_id/lots/:lot_id/grooves/:id', to: 'grooves#update', as: 'update_farm_lot_groofe'
+    get "/:id/summary", to: "farms#summary",as: 'summary'
+  end
 
   post '/grooves/:groofe_id/reports', to: 'plague_reports#create'
   post '/plague_reports/',to: 'plague_reports#create'

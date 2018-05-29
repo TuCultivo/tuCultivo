@@ -1,12 +1,15 @@
 <div class="center">
-  <p id="notice"><%= notice %></p>
+  <p id="notice" ><%= notice %></p>
 
   <h2>Surcos del lote: <%= @lot.name%></h2>
   <h4>Identificador del lote: <%= @lot.id%></h4>
-
+  
   <%= link_to 'Crear surco', new_farm_lot_groofe_path, {style:'color:#FFFFFF;',class:'btn btn-success right-button'} %>
   <%= link_to 'Volver', farm_lots_path , {style:'color:#FFFFFF;',class:'btn btn-danger right-button'} %>
   <% if @grooves.present? %>
+    <form action="http://pi2tucultivo.dis.eafit.edu.co/<%=@lot.id%>">
+        <input type="submit" value="Subir imagenes de este lote" class="btn btn-info"/>
+    </form>
     <table class="table">
       <thead>
         <tr>

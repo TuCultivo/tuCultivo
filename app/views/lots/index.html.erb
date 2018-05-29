@@ -1,9 +1,9 @@
 <div class="center">
-  <p id="notice"><%= notice %></p>
-
+  
   <h2>Lotes del cultivo: <%= @farm.name%></h2>
   <h4>Identificador del cultivo: <%= @farm.id%></h4>
-
+  <p id="notice"><%= notice %></p>
+ 
   <%= link_to 'Crear lote', new_farm_lot_path, {style:'color:#FFFFFF;',class:'btn btn-success right-button'} %>
   <%= link_to 'Volver', farms_path , {style:'color:#FFFFFF;',class:'btn btn-danger right-button'} %>
   <% if @lots.present? %>
